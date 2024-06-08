@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Authentication",
+    "environment": "Production",
+    "hostname": "api.buluro.com",
+    "server_ip": "35.246.184.58",
+    "services": [
+      {
+        "name": "Postgres",
+        "url": "/auth/health-check/pg"
+      },
+      {
+        "name": "Redis",
+        "url": "/auth/health-check/redis"
+      },
+      {
+        "name": "RabbitMQ",
+        "url": "/auth/health-check/rabbit"
+      }
+    ]
+  },
+  {
+    "name": "Bazaar",
+    "environment": "Production",
+    "hostname": "api.buluro.com",
+    "server_ip": "35.246.184.58",
+    "services": [
+      {
+        "name": "Postgres",
+        "url": "/bazaar/health-check/pg"
+      },
+      {
+        "name": "Redis",
+        "url": "/bazaar/health-check/redis"
+      },
+      {
+        "name": "RabbitMQ",
+        "url": "/bazaar/health-check/rabbit"
+      }
+    ]
+  },
+  {
+    "name": "Payment",
+    "environment": "Production",
+    "hostname": "api.buluro.com",
+    "server_ip": "35.246.184.58",
+    "services": [
+      {
+        "name": "Postgres",
+        "url": "/payment/health-check/pg"
+      },
+      {
+        "name": "Redis",
+        "url": "/payment/health-check/redis"
+      },
+      {
+        "name": "RabbitMQ",
+        "url": "/payment/health-check/rabbit"
+      }
+    ]
+  },
+  {
+    "name": "Messaging",
+    "environment": "Production",
+    "hostname": "api.buluro.com",
+    "server_ip": "35.246.184.58",
+    "services": [
+      {
+        "name": "Postgres",
+        "url": "/messaging/health-check/pg"
+      },
+      {
+        "name": "Redis",
+        "url": "/messaging/health-check/redis"
+      },
+      {
+        "name": "RabbitMQ",
+        "url": "/messaging/health-check/rabbit"
+      }
+    ]
+  },
+  {
+    "name": "Sideservices",
+    "environment": "Production",
+    "hostname": "api.buluro.com",
+    "server_ip": "35.246.184.58",
+    "services": [
+      {
+        "name": "Postgres",
+        "url": "/sideservices/health-check/pg"
+      },
+      {
+        "name": "Redis",
+        "url": "/sideservices/health-check/redis"
+      },
+      {
+        "name": "RabbitMQ",
+        "url": "/sideservices/health-check/rabbit"
+      }
+    ]
+  },
+  {
+    "name": "Admin Panel",
+    "environment": "Production",
+    "hostname": "api.buluro.com",
+    "server_ip": "35.246.184.58",
+    "services": [
+      {
+        "name": "Postgres",
+        "url": "/adminpanel/health-check/pg"
+      },
+      {
+        "name": "Redis",
+        "url": "/adminpanel/health-check/redis"
+      },
+      {
+        "name": "RabbitMQ",
+        "url": "/adminpanel/health-check/rabbit"
+      }
+    ]
+  },
+  {
+    "name": "Employment",
+    "environment": "Production",
+    "hostname": "api.buluro.com",
+    "server_ip": "35.246.184.58",
+    "services": [
+      {
+        "name": "Mongo",
+        "url": "/employment/health-check/mongo"
+      },
+      {
+        "name": "Redis",
+        "url": "/employment/health-check/redis"
+      },
+      {
+        "name": "RabbitMQ",
+        "url": "/employment/health-check/rabbit"
+      }
+    ]
+  },
+  {
+    "name": "Guide",
+    "environment": "Production",
+    "hostname": "api.buluro.com",
+    "server_ip": "35.246.184.58",
+    "services": [
+      {
+        "name": "Mongo",
+        "url": "/guide/health-check/mongo"
+      },
+      {
+        "name": "Redis",
+        "url": "/guide/health-check/redis"
+      },
+      {
+        "name": "RabbitMQ",
+        "url": "/guide/health-check/rabbit"
+      }
+    ]
+  }
+]

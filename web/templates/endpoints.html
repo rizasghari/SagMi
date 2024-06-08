@@ -1,0 +1,29 @@
+{{range .}}
+<tr>
+    <td>
+        <a class="mr-2" href="https://{{.Endpoint.HostName}}{{.Endpoint.Path}}" target="_blank">
+            <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+        {{.Endpoint.HostName}}{{.Endpoint.Path}}
+    </td>
+    {{if .Log.IsHealthy}}
+    <td class="healthy">Healthy</td>
+    {{else}}
+    <td class="unhealthy" data-toggle="tooltip" title="{{.Log.Content}}">
+        Unhealthy <button class="btn btn-link btn-sm copy-reason" data-reason="{{.Log.Content}}">log</button>
+    </td>
+    {{end}}
+    <td>{{.Endpoint.ParentAppName}}</td>
+    <td data-toggle="tooltip" title="{{.Endpoint.Description}}">{{.Endpoint.ServiceName}}</td>
+<!--    <td>{{.Endpoint.ServerIP}}</td>-->
+    <td>{{.Endpoint.Environment}}</td>
+    <td>
+        <button class="btn btn-danger btn-sm" hx-delete="/endpoint/{{.Endpoint.ID}}" hx-target="closest tr">
+            <i class="bi bi-trash"></i>
+        </button>
+        <button class="btn btn-success btn-sm me-2" hx-put="/endpoint/{{.Endpoint.ID}}" hx-target="closest tr">
+            <i class="bi bi-pencil"></i>
+        </button>
+    </td>
+</tr>
+{{end}}

@@ -1,0 +1,6 @@
+1- Add download logs
+2- Add charts
+3- Add SMS sending support
+4- Analytics
+5- Kubernetes
+6- Add CLI app feature

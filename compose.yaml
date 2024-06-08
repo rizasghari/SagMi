@@ -1,0 +1,14 @@
+services:
+  buluro_health_checker_app:
+    container_name: health-checker
+    build: ..
+  sqlite:
+    container_name: sqlite-container
+    image: sqlite:latest
+    volumes:
+      - sqlite-data:/data
+    ports:
+      - "5432:5432"
+    restart: always
+volumes:
+  sqlite-data:

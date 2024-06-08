@@ -1,0 +1,102 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    color: #343a40;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.form-control {
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+}
+
+.btn {
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    /*transform: scale(1.05);*/
+}
+
+.table {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.thead-dark {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease-in-out;
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+.was-validated .form-control:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+.healthy {
+    color: green;
+}
+
+.unhealthy {
+    color: red;
+}
+
+.tooltip-inner {
+    max-width: 300px;
+    text-align: left;
+}
+
+.table-hover tbody tr:hover {
+    background-color: inherit;
+}
+
+.card:hover {
+    transform: scale(1.0) !important;
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bi-box-arrow-up-right {
+    font-size: 13px;
+}
+
+.toast-top-right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure the toast is above other elements */
+}
+
+.chart {
+
+}
